@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/app.css">
+    <title>toDoList</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"> <div id="logo"> My Todo List</div></div>
+        <div class="header">
+            
+            <header>
+                <nav></nav>
+                    
+                <form id="addToDo" action="">
+                        <input type="text" id="title" placeholder="add new toDo " required>
+                        <input type="text" id="description" placeholder="add a description ">
+                        
+                        <select id="listName" style="visibility: hidden;">
+                            <option value="defaultList"></option>
+                            <!-- instert options with javascript -->
+                        </select>
+    
+                        <button type="submit" id="submitToDo">save</button>
+                </form>
+                
+            </header>
+
+        </div>
+    
+        <!--  lists and todo's -->
+        <div class="lists" >
+            <!-- <div class="newList">
+
+                <form id="addList" action="">
+                    <input type="text" id="newList" placeholder="add a new List" ></input>
+                    <button  type="submit">+</button>
+                </form>
+
+            </div>
+ -->
+            <!-- javascript generated lists -->
+           <!--  <div class="list">List</div> -->
+
+
+
+        </div>
+
+
+        <div class="content">
+            <!-- javascript generated todo's -->
+            <div class="toDoLists">
+                <div id="todo-group">
+                    
+                </div>
+            </div>
+            
+            <div class="content-footer">
+                <div id="reports" style="visibility:hidden"> report</div> 
+                <button id="clear"> Clear all</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+          
+        <div class="footer">
+            <footer></footer>
+        </div>
+        
+    
+        
+    </div>
+    
+</body>
+<script src="./src/app.js" async></script>
+</html>
+
+
+<!--           <header>
++-------------------------------------------------------+
++   My list            Title   Description   list       +
++                      ______  ___________   [...]      +
++-------------------------------------------------------+
++     <section>     +             <section>             +
++                   +                                   +
++ default           +      note                         +
++  [+] New List     +      note                         +
++                   +                                   +
++ list 1 --------------    note...                      +
++ list 2            +      ...                          +
++ list 3            +      ...                          +
++ list 4            +                                   +
++                   +                                   +
++                   +                                   +
++                   +                                   +
++                   +                                   +
++                   +                                   +
++                   +                                   +
++                   +                                   +
++                   +                                   +
++                   +                                   +
++-------------------------------------------------------+
+ -->
